@@ -13,7 +13,7 @@
 | Python | numpy、scipy、sounddevice |
 | 参数 | 960 ksps 采样、增益 49.5 dB、0.25 s 数据块 |
 
-本机自带的 32 位 DLL 无法被 64 位 Python 加载,故从 [rtlsdrblog 官方 Release](https://github.com/rtlsdrblog/rtl-sdr-blog/releases) 取 64 位版本。
+32 位 DLL 无法被 64 位 Python 加载,故从 [rtlsdrblog 官方 Release](https://github.com/rtlsdrblog/rtl-sdr-blog/releases) 取 64 位版本。
 
 ## 信号处理链
 
@@ -74,5 +74,4 @@ FM_NR=1 python fm_radio.py    # 强制启用谱减降噪
 |---|---|
 | `fm_radio.py` | 收音机主程序(全部 DSP) |
 | `scan_fm.py` | 频段扫描(双遍功率 + 贪心峰值分离,导频仅参考列) |
-| `gen_figs.py` | 本文档图件生成脚本(Nature 风格,180 mm,600 dpi) |
 | `rtlsdr_x64/` | 64 位 rtlsdr DLL 及依赖 |
