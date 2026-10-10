@@ -1,5 +1,4 @@
 rtlsdr_x64/
 __pycache__/
 *.wav
-fm_stations.csv
 render_check.json
