@@ -226,7 +226,7 @@ try:
                          blocksize=0, callback=callback):
         while True:
             time.sleep(2)
-            print(f"队列 {audio_q.qsize():3d}  欠载累计 {underruns[0]:4d}", flush=True)
+            pass
 except KeyboardInterrupt:
     pass
 finally:
